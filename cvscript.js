@@ -6,6 +6,96 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentLang = 'es';
     let currentTheme = 'dark';
 
+    // MODIFICATION: Sidebar toggle functionality
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const pageContainer = document.querySelector('.page-container');
+    const sidebar = document.getElementById('sidebar');
+    
+    // Load saved sidebar state
+    const savedSidebarState = localStorage.getItem('sidebarCollapsed');
+    if (savedSidebarState === 'true' && window.innerWidth > 800) {
+        pageContainer.classList.add('sidebar-collapsed');
+    }
+    
+    // MODIFICATION: Sidebar toggle event - only works on desktop
+    sidebarToggle.addEventListener('click', function() {
+        if (window.innerWidth > 800) {
+            pageContainer.classList.toggle('sidebar-collapsed');
+            const isCollapsed = pageContainer.classList.contains('sidebar-collapsed');
+            localStorage.setItem('sidebarCollapsed', isCollapsed);
+        }
+    });
+    
+    // MODIFICATION: Handle window resize - remove collapsed class on mobile
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            if (window.innerWidth <= 800) {
+                pageContainer.classList.remove('sidebar-collapsed');
+            } else {
+                // Restore saved state on desktop
+                const savedState = localStorage.getItem('sidebarCollapsed');
+                if (savedState === 'true') {
+                    pageContainer.classList.add('sidebar-collapsed');
+                } else {
+                    pageContainer.classList.remove('sidebar-collapsed');
+                }
+            }
+        }, 250);
+    });
+    
+    // MODIFICATION: Active navigation link highlighting on scroll
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('.section[id]');
+    
+    function highlightNavigation() {
+        let current = '';
+        const scrollOffset = window.innerWidth <= 800 ? 150 : 100; // Larger offset for mobile
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.pageYOffset >= (sectionTop - scrollOffset)) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+                
+                // MODIFICATION: Auto-scroll nav item into view on mobile
+                if (window.innerWidth <= 800) {
+                    link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                }
+            }
+        });
+    }
+    
+    window.addEventListener('scroll', highlightNavigation);
+    
+    // MODIFICATION: Smooth scroll to sections when clicking nav links
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                const isMobile = window.innerWidth <= 800;
+                const offset = isMobile ? 100 : 20; // Account for bottom nav on mobile
+                const targetPosition = targetSection.offsetTop - offset;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
     // Load saved preferences
     const savedLang = localStorage.getItem('preferredLanguage');
     const savedTheme = localStorage.getItem('preferredTheme');
@@ -14,12 +104,20 @@ document.addEventListener('DOMContentLoaded', function() {
         currentLang = savedLang;
         if (currentLang === 'es') {
             switchLanguage('es');
+        } else {
+            switchLanguage('en');
         }
+    } else {
+        // Default to Spanish
+        switchLanguage('es');
     }
 
     if (savedTheme) {
         currentTheme = savedTheme;
         applyTheme(currentTheme);
+    } else {
+        // Default to dark theme
+        applyTheme('dark');
     }
 
     // Theme toggle event
@@ -102,7 +200,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    const sections = document.querySelectorAll('.section');
     sections.forEach(section => {
         section.style.opacity = '0';
         section.style.transform = 'translateY(20px)';
@@ -125,13 +222,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Keyboard shortcuts
     document.addEventListener('keydown', function(e) {
+        // Alt + L to toggle language
         if (e.altKey && e.key === 'l') {
             e.preventDefault();
             langToggle.click();
         }
+        // Alt + T to toggle theme
         if (e.altKey && e.key === 't') {
             e.preventDefault();
             themeToggle.click();
+        }
+        // MODIFICATION: Alt + S to toggle sidebar (desktop only)
+        if (e.altKey && e.key === 's' && window.innerWidth > 800) {
+            e.preventDefault();
+            sidebarToggle.click();
         }
     });
 });
