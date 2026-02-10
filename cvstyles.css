@@ -896,6 +896,34 @@ body {
     transition: color 0.3s ease;
 }
 
+.compact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.compact-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.compact-links a:hover {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+.compact-links a i {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
 /* References Grid */
 .references-grid {
     display: grid;

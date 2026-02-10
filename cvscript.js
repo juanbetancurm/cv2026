@@ -158,11 +158,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (text) {
                 element.innerHTML = text;
 
-                /* if (element.children.length === 0) {
-                    element.textContent = text;
-                } else {
-                    updateTextContent(element, text);
-                } */
             }
         });
 
