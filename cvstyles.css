@@ -623,6 +623,8 @@ body {
     box-shadow: var(--shadow-md);
 }
 
+
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
 /* Project Links */
 .project-links {
     display: flex;
@@ -651,6 +653,76 @@ body {
     color: white;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+}
+ 
+/* MODIFICATION: Improved project buttons for better visibility */
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* MODIFICATION: Solid colored button with white text for better visibility */
+.project-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: white !important;
+    background: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.project-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.project-btn i {
+    font-size: 1.1rem;
+}
+
+/* MODIFICATION: Special styling for demo/LinkedIn buttons */
+.project-btn-demo {
+    background: linear-gradient(135deg, #0077b5 0%, #005582 100%);
+}
+
+.project-btn-demo:hover {
+    background: linear-gradient(135deg, #005582 0%, #003d5c 100%);
+}
+
+/* MODIFICATION: Video link button style (YouTube red) */
+.video-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: white !important;
+    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.video-link:hover {
+    background: linear-gradient(135deg, #cc0000 0%, #990000 100%);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.video-link i {
+    font-size: 1rem;
 }
 
 /* Education Items */
@@ -1231,3 +1303,27 @@ html {
 .sidebar::-webkit-scrollbar-thumb:hover {
     background: var(--accent-color);
 }
+
+    /* MODIFICATION: Ensure experience section is visible on mobile */
+    .experience-section,
+    .experience-item {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .exp-date {
+        font-size: 0.85rem;
+    }
+    
+    /* MODIFICATION: Smaller buttons on mobile */
+    .project-btn {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }

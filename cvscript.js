@@ -156,11 +156,13 @@ document.addEventListener('DOMContentLoaded', function() {
         elements.forEach(element => {
             const text = element.getAttribute('data-' + lang);
             if (text) {
-                if (element.children.length === 0) {
+                element.innerHTML = text;
+
+                /* if (element.children.length === 0) {
                     element.textContent = text;
                 } else {
                     updateTextContent(element, text);
-                }
+                } */
             }
         });
 
