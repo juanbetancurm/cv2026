@@ -624,7 +624,6 @@ body {
 }
 
 
-¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
 /* Project Links */
 .project-links {
     display: flex;
@@ -633,6 +632,7 @@ body {
     margin-top: 15px;
 }
 
+/*
 .project-links a {
     display: flex;
     align-items: center;
@@ -654,7 +654,8 @@ body {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
- 
+*/
+
 /* MODIFICATION: Improved project buttons for better visibility */
 .project-links {
     display: flex;
@@ -725,6 +726,9 @@ body {
     font-size: 1rem;
 }
 
+.video-link span {
+    color: white !important;
+}
 /* Education Items */
 .education-item {
     margin-bottom: 30px;
