@@ -7,7 +7,7 @@
     {title:'AngleMaze',image:'anglemaze-current.png',url:'https://anglemaze.labolavs.com/',
       es:'Geometría y programación en un laberinto interactivo',en:'Geometry and programming in an interactive maze',
       altEs:'Partida de AngleMaze con personaje y recorrido trazado dentro del laberinto.',altEn:'AngleMaze game with a character and a traced route through the maze.'},
-    {title:'Math Exam Grader',image:'grader.jpg',url:'https://grader.labolavs.com/',
+    {title:'Math Exam Grader',image:'grader.jpg?v=11ca2c30cdf8',url:'https://grader.labolavs.com/',
       es:'Examen, criterios de calificación y revisión de respuestas',en:'Exam, marking criteria and answer review',
       altEs:'Ejemplo de revisión: un estudiante cuenta una tapa en el área de una caja abierta y recibe una explicación.',altEn:'Illustrative review: a student includes a lid in an open box area and receives an explanation.',
       noteEs:'Ejemplo ilustrativo de retroalimentación',noteEn:'Illustrative feedback example'},
