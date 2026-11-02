@@ -1,431 +1,78 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Betancur — Desarrollador de Software</title>
-    <meta name="description" content="Desarrollador de software full-stack con experiencia en React, Django, Node, Spring Boot y Python. Proyectos reales con impacto medible.">
-    <link rel="stylesheet" href="cvstyles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-
-    <!-- ═══════════════════════════════════════════════════════ -->
-    <!-- FIXED NAVIGATION  -->
-    <!-- ═══════════════════════════════════════════════════════ -->
-    <nav class="topnav" id="topnav" role="navigation" aria-label="Navegación principal">
-        <div class="topnav-inner">
-            <a href="#hero" class="nav-link active" data-es="Perfil" data-en="Profile">Perfil</a>
-            <a href="#skills" class="nav-link" data-es="Skills" data-en="Skills">Skills</a>
-            <a href="#experience" class="nav-link" data-es="Experiencia" data-en="Experience">Experiencia</a>
-            <a href="#education" class="nav-link" data-es="Educación" data-en="Education">Educación</a>
-            <a href="#contact" class="nav-link" data-es="Contacto" data-en="Contact">Contacto</a>
-        </div>
-    </nav>
-
-    <main>
-
-        <!-- ═══════════════════════════════════════════════════════ -->
-        <!-- PROFILE         -->
-        <!-- ═══════════════════════════════════════════════════════ -->
-        <header class="hero" id="hero">
-            <div class="hero-content">
-                <div class="hero-main">
-                    <div class="hero-controls">
-                        <button class="ctrl-btn" id="theme-toggle" aria-label="Cambiar tema">
-                            <i class="fas fa-sun"></i>
-                        </button>
-                        <button class="ctrl-btn" id="lang-toggle" aria-label="Cambiar idioma">
-                            <span class="lang-text">EN</span>
-                        </button>
-                        <button class="ctrl-btn ctrl-btn--accent" id="pdf-btn" aria-label="Descargar PDF">
-                            <i class="fas fa-download"></i>
-                            <span>PDF</span>
-                        </button>
-                    </div>
-                    <h1>Juan Betancur</h1>
-                    <p class="hero-title" data-es="Desarrollador de Software Full Cycle" data-en="Full Cycle Software Developer">Desarrollador de Software Full Cycle</p>
-                    <p class="hero-summary" data-es="Desarrollador full-stack con ~3 años de experiencia construyendo aplicaciones web con React, Django y Spring Boot.<br>Proyectos reales en producción para clientes, con mejoras medibles en eficiencia operativa.<br>Perfil técnico con habilidad para comunicar y enseñar, ideal para equipos donde el conocimiento se comparte." data-en="Full-stack developer with ~3 years of experience building web apps with React, Django, Node, and Spring Boot.<br>Real production projects for clients, with measurable improvements in operational efficiency.<br>Technical profile with a knack for communication and teaching, ideal for teams where knowledge sharing matters.">Desarrollador full-stack con ~3 años de experiencia construyendo aplicaciones web con React, Django, Node y Spring Boot.<br>Proyectos reales en producción para clientes, con mejoras medibles en eficiencia operativa.<br>Perfil técnico con habilidad para comunicar y enseñar, ideal para equipos donde el conocimiento se comparte.</p>
-                </div>
-                
-                <div class="stats-bar">
-                    <div class="stat">
-                        <span class="stat-num">~3</span>
-                        <span class="stat-label" data-es="años dev" data-en="yrs dev">años dev</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-num">8+</span>
-                        <span class="stat-label" data-es="proyectos" data-en="projects">proyectos</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-num">4</span>
-                        <span class="stat-label" data-es="lenguajes" data-en="languages">lenguajes</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-num">C1</span>
-                        <span class="stat-label" data-es="inglés IELTS" data-en="English IELTS">inglés IELTS</span>
-                    </div>
-                </div>
-                <!-- Contact row inside hero -->
-                <div class="hero-contact">
-                    <a href="mailto:juan.jbetancur852@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i> juan.jbetancur852@gmail.com</a>
-                    <a href="https://github.com/juanbetancurm" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://www.linkedin.com/in/juanjbetancur852" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                </div>
-            </div>
-        </header>
-
-        <!-- ═══════════════════════════════════════════════════════ -->
-        <!-- SKILLS    -->
-        <!-- ═══════════════════════════════════════════════════════ -->
-        <section class="section" id="skills" aria-labelledby="skills-heading">
-            <h2 class="section-heading" id="skills-heading" data-es="Habilidades Técnicas" data-en="Technical Skills">Habilidades Técnicas</h2>
-
-            <div class="skills-compact">
-                <div class="skill-group">
-                    <h3 data-es="Frontend" data-en="Frontend">Frontend</h3>
-                    <div class="tag-row">
-                        <span class="tag">React</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">Phaser.js</span>
-                        <span class="tag">Recharts</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h3 data-es="Backend" data-en="Backend">Backend</h3>
-                    <div class="tag-row">
-                        <span class="tag">Django REST</span>
-                        <span class="tag">Spring Boot</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">Java</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h3 data-es="Datos &amp; DevOps" data-en="Data &amp; DevOps">Datos &amp; DevOps</h3>
-                    <div class="tag-row">
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">Jenkins</span>
-                        <span class="tag">Git / Git Flow</span>
-                        <span class="tag">Linux</span>
-                        <span class="tag">Pandas</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h3 data-es="Métodos &amp; Design Skills" data-en="Methods &amp; Soft Skills">Métodos &amp; Skills de Diseño</h3>
-                    <div class="tag-row">
-                        <span class="tag">Microservicios</span>
-                        <span class="tag">Arquitectura Hexagonal</span>
-                        <span class="tag">REST APIs</span>
-                        <span class="tag">TDD</span>
-                        <span class="tag">Scrum / Agile</span>
-                        <span class="tag">JWT / Spring Security</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Progressive disclosure: expandable technical detail -->
-            <details class="expand-detail">
-                <summary data-es="Ver detalle técnico por stack" data-en="See technical detail by stack">Ver detalle técnico por stack</summary>
-                <div class="detail-grid">
-                    <div class="detail-card">
-                        <h4>Django / DRF</h4>
-                        <ul>
-                            <li data-es="APIs RESTful con autenticación JWT" data-en="RESTful APIs with JWT authentication">APIs RESTful con autenticación JWT</li>
-                            <li data-es="Procesamiento de datos con Pandas/NumPy" data-en="Data processing with Pandas/NumPy">Procesamiento de datos con Pandas/NumPy</li>
-                            <li data-es="Chatbots con integración de IA (Ollama)" data-en="Chatbots with AI integration (Ollama)">Chatbots con integración de IA (Ollama)</li>
-                            <li data-es="Integración de APIs externas (Twilio, WhatsApp)" data-en="Third-party API integration (Twilio, WhatsApp)">Integración de APIs externas (Twilio, WhatsApp)</li>
-                            <li data-es="Despliegue: Docker local, Railway cloud" data-en="Deployment: local Docker, Railway cloud">Despliegue: Docker local, Railway cloud</li>
-                        </ul>
-                    </div>
-                    <div class="detail-card">
-                        <h4>Spring Boot</h4>
-                        <ul>
-                            <li data-es="Microservicios con arquitectura hexagonal" data-en="Microservices with hexagonal architecture">Microservicios con arquitectura hexagonal</li>
-                            <li data-es="APIs RESTful con principios SOLID" data-en="RESTful APIs with SOLID principles">APIs RESTful con principios SOLID</li>
-                            <li data-es="Seguridad: JWT, BCrypt, Spring Security" data-en="Security: JWT, BCrypt, Spring Security">Seguridad: JWT, BCrypt, Spring Security</li>
-                            <li data-es="TDD con JUnit/Mockito" data-en="TDD with JUnit/Mockito">TDD con JUnit/Mockito</li>
-                            <li data-es="Documentación con Swagger/OpenAPI" data-en="API docs with Swagger/OpenAPI">Documentación con Swagger/OpenAPI</li>
-                        </ul>
-                    </div>
-                    <div class="detail-card">
-                        <h4>React</h4>
-                        <ul>
-                            <li data-es="Dashboards interactivos con Recharts" data-en="Interactive dashboards with Recharts">Dashboards interactivos con Recharts</li>
-                            <li data-es="Integración REST y manejo de estado" data-en="REST integration and state management">Integración REST y manejo de estado</li>
-                            <li data-es="Juegos educativos con Phaser.js" data-en="Educational games with Phaser.js">Juegos educativos con Phaser.js</li>
-                        </ul>
-                    </div>
-                    <div class="detail-card">
-                        <h4>Python</h4>
-                        <ul>
-                            <li data-es="Análisis de datos (Pandas, NumPy)" data-en="Data analysis (Pandas, NumPy)">Análisis de datos (Pandas, NumPy)</li>
-                            <li data-es="Scripts de automatización (deploy, workflows)" data-en="Automation scripts (deploy, workflows)">Scripts de automatización (deploy, workflows)</li>
-                            <li data-es="Integración de modelos IA (Ollama)" data-en="AI model integration (Ollama)">Integración de modelos IA (Ollama)</li>
-                        </ul>
-                    </div>
-                </div>
-            </details>
-        </section>
-
-        <!-- ═══════════════════════════════════════════════════════ -->
-        <!-- EXPERIENCE  -->
-        <!-- ═══════════════════════════════════════════════════════ -->
-        <section class="section" id="experience" aria-labelledby="exp-heading">
-            <h2 class="section-heading" id="exp-heading" data-es="Experiencia" data-en="Experience">Experiencia</h2>
-
-            <!-- FEATURED PROJECT  -->
-            <article class="exp-item exp-item--featured">
-                <div class="exp-top">
-                    <div>
-                        <h3 data-es="Plataforma de Análisis de Eficiencia — Cadena de Restaurantes" data-en="Efficiency Analysis Platform — Restaurant Chain">Plataforma de Análisis de Eficiencia — Cadena de Restaurantes</h3>
-                        <span class="exp-type" data-es="Consultoría freelance" data-en="Freelance consulting">Consultoría freelance</span>
-                    </div>
-                    <span class="exp-date">2024 – 2025</span>
-                </div>
-                <ul class="exp-achievements">
-                    <li data-es="Construí solución full-stack (Django + React) que analizó datos operativos de <strong>3 restaurantes</strong> en producción" data-en="Built full-stack solution (Django + React) analyzing operational data from <strong>3 restaurants</strong> in production">Construí solución full-stack (Django + React) que analizó datos operativos de <strong>3 restaurantes</strong> en producción</li>
-                    <li data-es="El análisis identificó oportunidades que proyectaron <strong>~18% de mejora en márgenes</strong> operativos" data-en="Analysis identified opportunities projecting <strong>~18% margin improvement</strong> in operations">El análisis identificó oportunidades que proyectaron <strong>~18% de mejora en márgenes</strong> operativos</li>
-                    <li data-es="Dashboard interactivo con visualización Recharts, scoring multi-dimensional y reportes automatizados" data-en="Interactive dashboard with Recharts visualization, multi-dimensional scoring, and automated reports">Dashboard interactivo con visualización Recharts, scoring multi-dimensional y reportes automatizados</li>
-                </ul>
-                <div class="tag-row">
-                    <span class="tag">Django</span><span class="tag">React</span><span class="tag">PostgreSQL</span><span class="tag">Pandas</span><span class="tag">Docker</span><span class="tag">JWT</span>
-                </div>
-            </article>
-
-            <!-- FEATURED PROJECT #2 -->
-            <article class="exp-item exp-item--featured">
-                <div class="exp-top">
-                    <div>
-                        <h3 data-es="Sistema de Gestión de Restaurantes — Microservicios" data-en="Restaurant Management System — Microservices">Sistema de Gestión de Restaurantes — Microservicios</h3>
-                        <span class="exp-type" data-es="Desarrollo colaborativo freelance" data-en="Collaborative freelance development">Desarrollo colaborativo freelance</span>
-                    </div>
-                    <span class="exp-date">2024 – 2025</span>
-                </div>
-                <ul class="exp-achievements">
-                    <li data-es="Implementé arquitectura de <strong>microservicios con patrón hexagonal</strong> y principios SOLID en Spring Boot" data-en="Implemented <strong>microservices architecture with hexagonal pattern</strong> and SOLID principles in Spring Boot">Implementé arquitectura de <strong>microservicios con patrón hexagonal</strong> y principios SOLID en Spring Boot</li>
-                    <li data-es="Entregué <strong>3 servicios independientes</strong> (backend core, carrito, frontend) con despliegue separado" data-en="Delivered <strong>3 independent services</strong> (core backend, cart, frontend) with separate deployment">Entregué <strong>3 servicios independientes</strong> (backend core, carrito, frontend) con despliegue separado</li>
-                    <li data-es="Suite de pruebas con JUnit/Mockito y autenticación JWT integrada" data-en="Test suite with JUnit/Mockito and integrated JWT authentication">Suite de pruebas con JUnit/Mockito y autenticación JWT integrada</li>
-                </ul>
-                <div class="tag-row">
-                    <span class="tag">Spring Boot</span><span class="tag">React</span><span class="tag">MySQL</span><span class="tag">JUnit</span><span class="tag">JWT</span>
-                </div>
-                <div class="exp-links">
-                    <a href="https://github.com/juanbetancurm/rockburger.git" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Backend</a>
-                    <a href="https://github.com/juanbetancurm/burgercartservice.git" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Cart Service</a>
-                    <a href="https://github.com/juanbetancurm/frontBurger.git" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Frontend</a>
-                </div>
-            </article>
-
-            <!-- Compact projects -->
-            <article class="exp-item">
-                <div class="exp-top">
-                    <div>
-                        <h3 data-es="AngleMaze — App Educativa de Geometría Interactiva" data-en="AngleMaze — Interactive Geometry Education App">AngleMaze — App Educativa de Geometría Interactiva</h3>
-                    </div>
-                    <span class="exp-date">2025</span>
-                </div>
-                <ul class="exp-achievements">
-                    <li data-es="Plataforma web (Django + React + Phaser.js) que combina geometría con programación básica para estudiantes" data-en="Web platform (Django + React + Phaser.js) combining geometry with basic programming for students">Plataforma web (Django + React + Phaser.js) que combina geometría con programación básica para estudiantes</li>
-                    <li data-es="API RESTful completa con gestión de usuarios, configuración de laberintos y <strong>~50 estudiantes</strong> como usuarios objetivo" data-en="Complete RESTful API with user management, maze config, and <strong>~50 students</strong> as target users">API RESTful completa con gestión de usuarios, configuración de laberintos y <strong>~50 estudiantes</strong> como usuarios objetivo <!-- ~ estimado, verificar --></li>
-                    <li data-es="Implementé Git Flow para flujo de desarrollo organizado" data-en="Implemented Git Flow for organized development workflow">Implementé Git Flow para flujo de desarrollo organizado</li>
-                </ul>
-                <div class="tag-row">
-                    <span class="tag">Django</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Phaser.js</span><span class="tag">MySQL</span>
-                </div>
-                <div class="exp-links">
-                    <a href="https://github.com/juanbetancurm/angleMazeDjango" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Repo</a>
-                    <a href="https://www.linkedin.com/posts/juanjbetancur852_this-engaging-educational-game-developed-ugcPost-7325703691678670848-Lzjb" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> Demo</a>
-                </div>
-            </article>
-
-            <article class="exp-item">
-                <div class="exp-top">
-                    <div>
-                        <h3 data-es="Plataforma de Torneos de Fútbol" data-en="Football Tournament Platform">Plataforma de Torneos de Fútbol</h3>
-                    </div>
-                    <span class="exp-date">2024</span>
-                </div>
-                <ul class="exp-achievements">
-                    <li data-es="Aplicación web de gestión de torneos con Spring Boot, endpoints seguros y documentación Swagger/OpenAPI" data-en="Tournament management web app with Spring Boot, secure endpoints, and Swagger/OpenAPI docs">Aplicación web de gestión de torneos con Spring Boot, endpoints seguros y documentación Swagger/OpenAPI</li>
-                    <li data-es="Registro de equipos con encriptación BCrypt y <strong>endpoints listos para producción</strong>" data-en="Team registration with BCrypt encryption and <strong>production-ready endpoints</strong>">Registro de equipos con encriptación BCrypt y <strong>endpoints listos para producción</strong></li>
-                </ul>
-                <div class="tag-row">
-                    <span class="tag">Spring Boot</span><span class="tag">MariaDB</span><span class="tag">Spring Security</span><span class="tag">Swagger</span>
-                </div>
-            </article>
-
-            <article class="exp-item">
-                <div class="exp-top">
-                    <div>
-                        <h3 data-es="Desafío Día Pi — Búsqueda del Tesoro Educativa" data-en="Pi Day Challenge — Educational Scavenger Hunt">Desafío Día Pi — Búsqueda del Tesoro Educativa</h3>
-                    </div>
-                    <span class="exp-date">2025</span>
-                </div>
-                <ul class="exp-achievements">
-                    <li data-es="Plataforma de juegos desplegada en <strong>Railway (cloud)</strong> con juego concurrente multi-equipo" data-en="Gaming platform deployed on <strong>Railway (cloud)</strong> with concurrent multi-team gameplay">Plataforma de juegos desplegada en <strong>Railway (cloud)</strong> con juego concurrente multi-equipo</li>
-                    <li data-es="Tabla de clasificación en tiempo real, acertijos aleatorios y dificultad adaptativa" data-en="Real-time leaderboard, randomized puzzles, and adaptive difficulty">Tabla de clasificación en tiempo real, acertijos aleatorios y dificultad adaptativa</li>
-                </ul>
-                <div class="tag-row">
-                    <span class="tag">Spring Boot</span><span class="tag">MySQL</span><span class="tag">Thymeleaf</span><span class="tag">Railway</span>
-                </div>
-                <div class="exp-links">
-                    <a href="https://github.com/juanbetancurm/piScavengersHunt.git" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Repo</a>
-                    <a href="https://www.linkedin.com/posts/juanjbetancur852_education-mathematics-piday-activity-7330756196410261505-pzEX" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> Demo</a>
-                </div>
-            </article>
-
-            <article class="exp-item">
-                <div class="exp-top">
-                    <div>
-                        <h3 data-es="Bot de IA para WhatsApp" data-en="WhatsApp AI Bot">Bot de IA para WhatsApp</h3>
-                    </div>
-                    <span class="exp-date">2024</span>
-                </div>
-                <ul class="exp-achievements">
-                    <li data-es="Chatbot inteligente con Django y Ollama AI para procesamiento de lenguaje natural vía WhatsApp" data-en="Intelligent chatbot with Django and Ollama AI for natural language processing via WhatsApp">Chatbot inteligente con Django y Ollama AI para procesamiento de lenguaje natural vía WhatsApp</li>
-                    <li data-es="Integración Twilio con webhooks, conversaciones contextuales y modelos de IA locales" data-en="Twilio integration with webhooks, contextual conversations, and local AI models">Integración Twilio con webhooks, conversaciones contextuales y modelos de IA locales</li>
-                </ul>
-                <div class="tag-row">
-                    <span class="tag">Django</span><span class="tag">Python</span><span class="tag">Ollama AI</span><span class="tag">Twilio</span>
-                </div>
-            </article>
-
-            <article class="exp-item">
-                <div class="exp-top">
-                    <div>
-                        <h3 data-es="Panel de Evaluación para Estudiantes" data-en="Student Assessment Dashboard">Panel de Evaluación para Estudiantes</h3>
-                    </div>
-                    <span class="exp-date">2026</span>
-                </div>
-                <ul class="exp-achievements">
-                    <li data-es="App web para rastrear progreso académico con visualización de calificaciones y análisis de desempeño" data-en="Web app to track academic progress with grade visualization and performance analytics">App web para rastrear progreso académico con visualización de calificaciones y análisis de desempeño</li>
-                    <li data-es="React + TypeScript con arquitectura API RESTful" data-en="React + TypeScript with RESTful API architecture">React + TypeScript con arquitectura API RESTful</li>
-                </ul>
-                <div class="tag-row">
-                    <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span>
-                </div>
-            </article>
-
-            <!-- Employment history merged into experience  -->
-            <h3 class="subsection-divider" data-es="Experiencia Laboral" data-en="Employment">Experiencia Laboral</h3>
-
-            <article class="exp-item">
-                <div class="exp-top">
-                    <div>
-                        <h3 data-es="Profesor de Matemáticas y Programación" data-en="Mathematics & Programming Teacher">Profesor de Matemáticas y Programación</h3>
-                        <span class="exp-type">Instituto Jorge Robledo</span>
-                    </div>
-                    <span class="exp-date">2018 – Presente</span>
-                </div>
-                <ul class="exp-achievements">
-                    <li data-es="Diseño e impartición de cursos de <strong>JavaScript, POO, Geometría, Trigonometría, Estadística y Cálculo</strong>" data-en="Design and delivery of courses in <strong>JavaScript, OOP, Geometry, Trigonometry, Statistics, and Calculus</strong>">Diseño e impartición de cursos de <strong>JavaScript, POO, Geometría, Trigonometría, Estadística y Cálculo</strong></li>
-                    <li data-es="Desarrollo de animaciones 2D/3D para ilustrar conceptos matemáticos y físicos complejos" data-en="Development of 2D/3D animations to illustrate complex math and physics concepts">Desarrollo de animaciones 2D/3D para ilustrar conceptos matemáticos y físicos complejos</li>
-                    <li data-es="Instructor de curso de programación en Python (<strong>~20 estudiantes</strong>, 2023)" data-en="Python programming course instructor (<strong>~20 students</strong>, 2023)">Instructor de curso de programación en Python (<strong>~20 estudiantes</strong>, 2023) <!-- ~ estimado, verificar --></li>
-                </ul>
-            </article>
-        </section>
-
-        <!-- ═══════════════════════════════════════════════════════ -->
-        <!-- EDUCATION  -->
-        <!-- ═══════════════════════════════════════════════════════ -->
-        <section class="section" id="education" aria-labelledby="edu-heading">
-            <h2 class="section-heading" id="edu-heading" data-es="Educación" data-en="Education">Educación</h2>
-
-            <div class="edu-grid">
-                <article class="edu-item">
-                    <h3 data-es="Tecnólogo en Análisis y Desarrollo de Software" data-en="Technology Degree in Software Analysis & Development">Tecnólogo en Análisis y Desarrollo de Software</h3>
-                    <p class="edu-inst">SENA — Servicio Nacional de Aprendizaje</p>
-                    <p class="edu-desc" data-es="Análisis, planificación, POO, desarrollo de software y web." data-en="Analysis, planning, OOP, software and web development.">Análisis, planificación, POO, desarrollo de software y web.</p>
-                </article>
-
-                <article class="edu-item">
-                    <h3 data-es="Licenciatura en Filosofía (Minor: Matemáticas)" data-en="Bachelor in Philosophy (Minor: Mathematics)">Licenciatura en Filosofía (Minor: Matemáticas)</h3>
-                    <p class="edu-inst" data-es="Universidad de Antioquia" data-en="University of Antioquia">Universidad de Antioquia</p>
-                    <p class="edu-desc" data-es="Lógica, pensamiento crítico, teoría de la ciencia. Matemáticas: Cálculo Diferencial e Integral, Cálculo Multivariable, Álgebra Lineal, Ecuaciones Diferenciales." data-en="Logic, critical thinking, theory of science. Mathematics: Differential & Integral Calculus, Multivariable Calculus, Linear Algebra, Differential Equations.">Lógica, pensamiento crítico, teoría de la ciencia. Matemáticas: Cálculo Diferencial e Integral, Cálculo Multivariable, Álgebra Lineal, Ecuaciones Diferenciales.</p>
-                </article>
-
-                <article class="edu-item">
-                    <h3 data-es="Técnico en Programación" data-en="Programming Technician">Técnico en Programación</h3>
-                    <p class="edu-inst" data-es="Universidad Autónoma de Bucaramanga" data-en="Autonomous University of Bucaramanga">Universidad Autónoma de Bucaramanga</p>
-                    <p class="edu-desc" data-es="POO, desarrollo web con Spring Boot y MERN." data-en="OOP, web development with Spring Boot and MERN.">POO, desarrollo web con Spring Boot y MERN.</p>
-                </article>
-            </div>
-
-            <!-- Professional development -->
-            <details class="expand-detail">
-                <summary data-es="Cursos y certificaciones" data-en="Courses and certifications">Cursos y certificaciones</summary>
-                <div class="courses-list">
-                    <div class="course-chip">
-                        <strong data-es="Fundamentos de DevOps" data-en="DevOps Fundamentals">Fundamentos de DevOps</strong>
-                        <span>EPAM — 225h</span>
-                        <small data-es="Python, Bash, CI/CD, Docker, Jenkins" data-en="Python, Bash, CI/CD, Docker, Jenkins">Python, Bash, CI/CD, Docker, Jenkins</small>
-                    </div>
-                    <div class="course-chip">
-                        <strong data-es="Bootcamp Desarrollador Web" data-en="Web Developer Bootcamp">Bootcamp Desarrollador Web</strong>
-                        <span>Udemy — 63.5h</span>
-                        <small>HTML, CSS, Bootstrap, JavaScript, Node.js, Express, MongoDB</small>
-                    </div>
-                    <div class="course-chip">
-                        <strong>The Ultimate MySQL Bootcamp</strong>
-                        <span>Udemy — 36.5h</span>
-                        <small>CRUD, Joins, Funciones, Bases de datos</small>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Animation samples -->
-            <details class="expand-detail">
-                <summary data-es="Animaciones 2D/3D educativas" data-en="Educational 2D/3D animations">Animaciones 2D/3D educativas</summary>
-                <div class="exp-links" style="padding-top: 0.75rem;">
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7337255388465033217/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> Pitágoras</a>
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7203878560246157315/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> Maze 1</a>
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7325703793843597314/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> Maze 2</a>
-                </div>
-            </details>
-        </section>
-
-        <!-- ═══════════════════════════════════════════════════════ -->
-        <!-- CONTACT   -->
-        <!-- ═══════════════════════════════════════════════════════ -->
-        <section class="section section--contact" id="contact" aria-labelledby="contact-heading">
-            <h2 class="section-heading" id="contact-heading" data-es="Contacto" data-en="Contact">Contacto</h2>
-            <div class="contact-grid">
-                <a href="mailto:juan.jbetancur852@gmail.com" class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <span>juan.jbetancur852@gmail.com</span>
-                </a>
-                <a href="tel:+573008140599" class="contact-card">
-                    <i class="fas fa-phone"></i>
-                    <span>+573008140599</span>
-                </a>
-                <a href="https://github.com/juanbetancurm" target="_blank" rel="noopener noreferrer" class="contact-card">
-                    <i class="fab fa-github"></i>
-                    <span>github.com/juanbetancurm</span>
-                </a>
-                <a href="https://www.linkedin.com/in/juanjbetancur852" target="_blank" rel="noopener noreferrer" class="contact-card">
-                    <i class="fab fa-linkedin"></i>
-                    <span>linkedin.com/in/juanjbetancur852</span>
-                </a>
-            </div>
-            <!-- References-->
-            <p class="references-line" data-es="Referencias profesionales disponibles bajo solicitud." data-en="Professional references available upon request.">Referencias profesionales disponibles bajo solicitud.</p>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2026 Juan Betancur</p>
-    </footer>
-
-    <script src="cvscript.js"></script>
-</body>
-</html>
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juan Betancur | Software, agentes de IA y automatización</title>
+<meta name="description" content="Portafolio de Juan Betancur: desarrollo de software, agentes de IA, infraestructura Azure y automatización. Proyectos, experiencia y formación.">
+<meta name="theme-color" content="#f3f8ff">
+<link rel="stylesheet" href="cvstyles.css"><script src="project-gallery.js" defer></script><script src="cvscript.js" defer></script></head><body>
+<a data-es="Ir al contenido" data-en="Skip to content" class="skip" href="#main">Ir al contenido</a>
+<header class="topbar"><a class="wordmark" href="#hero" aria-label="Juan Betancur">Juan Betancur</a><nav aria-label="Portfolio">
+<a data-es="Proyectos" data-en="Projects" href="#projects">Proyectos</a>
+<a data-es="Experiencia" data-en="Experience" href="#experience">Experiencia</a>
+<a data-es="Habilidades" data-en="Skills" href="#skills">Habilidades</a>
+<a data-es="Formación" data-en="Education" href="#education">Formación</a>
+</nav><div class="controls"><button id="lang-toggle" type="button" aria-label="Switch to English">EN</button><button id="theme-toggle" type="button" aria-label="Cambiar tema">◐</button>
+<button data-es="Guardar PDF" data-en="Save PDF" id="pdf-btn" type="button" class="print-button">Guardar PDF</button>
+</div></header><main id="main" class="container"><section id="hero" class="hero"><div class="hero-copy">
+<p data-es="Medellín, Colombia" data-en="Medellín, Colombia" class="eyebrow">Medellín, Colombia</p>
+<h1>Juan<br> Betancur</h1>
+<h2 data-es="Desarrollador de software y analista de infraestructura y automatización." data-en="Software developer and infrastructure and automation analyst." class="hero-title">Desarrollador de software y analista de infraestructura y automatización.</h2>
+<p data-es="Desarrollo aplicaciones, automatizo flujos de información y construyo agentes de IA. Combino experiencia en backend e infraestructura con una forma de trabajar orientada a las pruebas y a explicar las cosas con claridad." data-en="I develop applications, automate information workflows and build AI agents. I combine backend and infrastructure experience with a focus on testing and clear communication." >Desarrollo aplicaciones, automatizo flujos de información y construyo agentes de IA. Combino experiencia en backend e infraestructura con una forma de trabajar orientada a las pruebas y a explicar las cosas con claridad.</p>
+<div class="actions"><a data-es="Explorar proyectos" data-en="Explore projects" class="button primary" href="#projects">Explorar proyectos</a><a data-es="Contacto" data-en="Contact" class="button" href="#contact">Contacto</a></div></div><figure class="project-preview" aria-label="Proyectos de LabOlavs" aria-roledescription="carrusel">
+<button class="preview-image-button" id="preview-expand" type="button" aria-label="Ampliar vista de LabOlavs"><img id="preview-image" src="assets/labolavs.jpg" alt="LabOlavs: juegos, educación y aplicaciones" width="1200" height="850" fetchpriority="high"><span class="expand-hint" data-es="Ampliar imagen" data-en="Enlarge image">Ampliar imagen</span></button>
+<figcaption><div class="preview-copy"><strong id="preview-title">LabOlavs</strong><span id="preview-description">Aplicaciones y recursos educativos</span></div><a id="preview-link" href="https://www.labolavs.com/" target="_blank" rel="noopener noreferrer" data-es="Abrir proyecto" data-en="Open project">Abrir proyecto</a></figcaption>
+<div class="gallery-controls" aria-label="Controles de la presentación"><button id="preview-prev" type="button" data-es="Anterior" data-en="Previous">Anterior</button><span id="preview-count">1 / 7</span><button id="preview-next" type="button" data-es="Siguiente" data-en="Next">Siguiente</button></div>
+<small id="preview-note">Vista del proyecto</small><p id="preview-status" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+<noscript><style>.gallery-controls,.expand-hint{display:none}</style></noscript>
+</figure></section>
+<div class="current-strip"><span class="status-dot"></span><div><strong data-es="Actualmente en E-chez Group" data-en="Currently at E-chez Group" >Actualmente en E-chez Group</strong><span data-es="Analista de Infraestructura y Automatización" data-en="Infrastructure and Automation Analyst" >Analista de Infraestructura y Automatización</span></div><a data-es="Mi laboratorio: LabOlavs ↗" data-en="My lab: LabOlavs ↗" href="https://www.labolavs.com/" target="_blank" rel="noopener noreferrer">Mi laboratorio: LabOlavs ↗</a></div>
+<section id="projects"><div class="section-head"><div><h2 data-es="Proyectos" data-en="Projects" >Proyectos</h2></div><p data-es="Proyectos de agentes de IA, desarrollo de software y educación." data-en="Projects in AI agents, software development and education." >Proyectos de agentes de IA, desarrollo de software y educación.</p></div>
+<div class="filters" role="group" aria-label="Project filters">
+<button data-es="Todos" data-en="All" type="button" data-filter="all" aria-pressed="true">Todos</button>
+<button data-es="Agentes de IA" data-en="AI agents" type="button" data-filter="ai" aria-pressed="false">Agentes de IA</button>
+<button data-es="Software" data-en="Software" type="button" data-filter="software" aria-pressed="false">Software</button>
+<button data-es="Aprendizaje" data-en="Learning" type="button" data-filter="learning" aria-pressed="false">Aprendizaje</button>
+</div><p id="filter-status" class="sr-only" aria-live="polite"></p><div class="projects-grid">
+<article class="project featured" data-category="ai"><div class="project-heading"><div class="project-top"><span data-es="Proyecto de equipo · 2026" data-en="Team project · 2026" class="eyebrow">Proyecto de equipo · 2026</span></div><h3>Argus</h3><h4 data-es="Diagnóstico de incidentes con evidencia" data-en="Evidence-based incident diagnosis" >Diagnóstico de incidentes con evidencia</h4></div><div class="project-detail"><p data-es="Colaboro en un agente de diagnóstico de servidores Linux y contenedores Docker. Combina razonamiento basado en grafos, herramientas MCP y runbooks con RAG; incluye recuperación vectorial con pgvector y Weaviate." data-en="I contribute to an agent that diagnoses Linux server and Docker container incidents. It combines graph-based reasoning, MCP tools and RAG runbooks, including vector retrieval with pgvector and Weaviate." >Colaboro en un agente de diagnóstico de servidores Linux y contenedores Docker. Combina razonamiento basado en grafos, herramientas MCP y runbooks con RAG; incluye recuperación vectorial con pgvector y Weaviate.</p>
+<p data-es="Mis aportes: checkpoints en PostgreSQL, separación de API/worker/scheduler, aislamiento de credenciales para MCP y escenarios de evaluación y recuperación. Argus es de solo lectura; el código actual está en un repositorio privado del equipo." data-en="My contributions include PostgreSQL checkpoints, API/worker/scheduler separation, MCP credential isolation, and evaluation and recovery scenarios. Argus is read-only; current code is in a private team repository." >Mis aportes: checkpoints en PostgreSQL, separación de API/worker/scheduler, aislamiento de credenciales para MCP y escenarios de evaluación y recuperación. Argus es de solo lectura; el código actual está en un repositorio privado del equipo.</p>
+<div class="tags"><span>Python</span><span>LangGraph</span><span>MCP</span><span>RAG</span><span>PostgreSQL</span></div><div class="project-links"><a data-es="Ver MVP público anterior ↗" data-en="View public predecessor MVP ↗" href="https://github.com/juanbetancurm/agent_serv_ops_mvp" target="_blank" rel="noopener noreferrer">Ver MVP público anterior ↗</a></div></div></article>
+<article class="project " data-category="ai"><div class="project-content"><div class="project-top"><span data-es="Proyecto · 2026" data-en="Project · 2026" class="eyebrow">Proyecto · 2026</span></div><h3>Math Exam Grader</h3><h4 data-es="Evaluación con reglas explícitas" data-en="Assessment with explicit rules" >Evaluación con reglas explícitas</h4><p data-es="Agente con PydanticAI para extraer exámenes y respuestas, aplicar comprobaciones deterministas y gestionar revisiones con historial. Incluye pruebas y ejemplos de manejo de inyección de instrucciones." data-en="PydanticAI agent for extracting exams and answers, applying deterministic checks and handling appeals with saved history. Includes tests and examples addressing prompt injection." >Agente con PydanticAI para extraer exámenes y respuestas, aplicar comprobaciones deterministas y gestionar revisiones con historial. Incluye pruebas y ejemplos de manejo de inyección de instrucciones.</p>
+<div class="tags"><span>Python</span><span>PydanticAI</span><span>Testing</span></div><div class="project-links"><a data-es="Abrir aplicación ↗" data-en="Open application ↗" href="https://grader.labolavs.com/" target="_blank" rel="noopener noreferrer">Abrir aplicación ↗</a><a data-es="Código del pipeline ↗" data-en="Pipeline source ↗" href="https://github.com/juanbetancurm/graderAgent_PydanticAI" target="_blank" rel="noopener noreferrer">Código del pipeline ↗</a></div></div></article>
+<article class="project " data-category="software learning"><div class="project-content"><div class="project-top"><span data-es="Proyecto · 2025" data-en="Project · 2025" class="eyebrow">Proyecto · 2025</span></div><h3>AngleMaze</h3><h4 data-es="Aprender geometría programando" data-en="Learn geometry through programming" >Aprender geometría programando</h4><p data-es="Aplicación de geometría y programación: navegación de laberintos, gestión de usuarios, configuración y resultados. Backend con Django REST, interfaz React/TypeScript y Phaser.js." data-en="Geometry and programming application with maze navigation, user management, configuration and results. Django REST backend with React/TypeScript and Phaser.js." >Aplicación de geometría y programación: navegación de laberintos, gestión de usuarios, configuración y resultados. Backend con Django REST, interfaz React/TypeScript y Phaser.js.</p>
+<div class="tags"><span>Django REST</span><span>React</span><span>TypeScript</span><span>MySQL</span></div><div class="project-links"><a data-es="Jugar ↗" data-en="Play ↗" href="https://anglemaze.labolavs.com/" target="_blank" rel="noopener noreferrer">Jugar ↗</a><a data-es="Ver código ↗" data-en="View source ↗" href="https://github.com/juanbetancurm/angleMazeDjango" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div></div></article>
+<article class="project " data-category="software"><div class="project-content"><div class="project-top"><span data-es="Colaboración freelance · 2025" data-en="Freelance collaboration · 2025" class="eyebrow">Colaboración freelance · 2025</span></div><h3>Rock&Burger</h3><h4 data-es="Backend para gestión de restaurantes" data-en="Restaurant management backend" >Backend para gestión de restaurantes</h4><p data-es="Colaboré en un sistema Spring Boot/React con arquitectura hexagonal y SOLID. Implementé persistencia JPA/MySQL, autenticación JWT y pruebas JUnit/Mockito; backend y carrito desplegables por separado." data-en="Collaborated on a Spring Boot/React system using hexagonal architecture and SOLID. Implemented JPA/MySQL persistence, JWT authentication and JUnit/Mockito tests, with separately deployable backend and cart services." >Colaboré en un sistema Spring Boot/React con arquitectura hexagonal y SOLID. Implementé persistencia JPA/MySQL, autenticación JWT y pruebas JUnit/Mockito; backend y carrito desplegables por separado.</p>
+<div class="tags"><span>Java</span><span>Spring Boot</span><span>JUnit</span><span>MySQL</span></div><div class="project-links"><a data-es="Ver backend ↗" data-en="View backend ↗" href="https://github.com/juanbetancurm/rockburger" target="_blank" rel="noopener noreferrer">Ver backend ↗</a></div></div></article>
+<article class="project " data-category="ai software"><div class="project-content"><div class="project-top"><span data-es="Proyecto · 2024" data-en="Project · 2024" class="eyebrow">Proyecto · 2024</span></div><h3>WhatsApp AI bot</h3><h4 data-es="Conversaciones conectadas a un modelo local" data-en="Conversations connected to a local model" >Conversaciones conectadas a un modelo local</h4><p data-es="Integración de Ollama en un chatbot Django con webhooks Twilio/WhatsApp, respuestas con contexto, tareas asíncronas y manejo de errores." data-en="Integrated Ollama into a Django chatbot with Twilio/WhatsApp webhooks, contextual responses, asynchronous tasks and error handling." >Integración de Ollama en un chatbot Django con webhooks Twilio/WhatsApp, respuestas con contexto, tareas asíncronas y manejo de errores.</p>
+<div class="tags"><span>Python</span><span>Django</span><span>Ollama</span><span>Webhooks</span></div><div class="project-links"><a data-es="Ver código ↗" data-en="View source ↗" href="https://github.com/juanbetancurm/whatsapp_bot" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div></div></article>
+<article class="project" data-category="software learning"><div class="project-content">
+<div class="project-top"><span class="eyebrow" data-es="Proyecto · 2025" data-en="Project · 2025">Proyecto · 2025</span></div>
+<h3>Pi Day Challenge</h3>
+<h4 data-es="Retos matemáticos en equipo" data-en="Team-based mathematics challenges">Retos matemáticos en equipo</h4>
+<p data-es="Aplicación Spring Boot/MySQL con registro de equipos, acertijos, clasificación y sesiones concurrentes. Desplegada en Railway." data-en="Spring Boot/MySQL application with team registration, puzzles, a leaderboard and concurrent sessions. Deployed to Railway.">Aplicación Spring Boot/MySQL con registro de equipos, acertijos, clasificación y sesiones concurrentes. Desplegada en Railway.</p>
+<div class="tags"><span>Spring Boot</span><span>MySQL</span><span>JPA / Hibernate</span></div>
+<div class="project-links"><a href="https://github.com/juanbetancurm/piScavengersHunt" target="_blank" rel="noopener noreferrer" data-es="Ver código ↗" data-en="View source ↗">Ver código ↗</a></div>
+</div></article><article class="project " data-category="learning software"><div class="project-content"><div class="project-top"><span data-es="Herramientas en línea" data-en="Online tools" class="eyebrow">Herramientas en línea</span></div><h3>LabOlavs</h3><h4 data-es="Un espacio para aprender haciendo" data-en="A place to learn by doing" >Un espacio para aprender haciendo</h4><p data-es="Explora recursos interactivos de programación, matemáticas financieras y traducción del ADN, además de mis aplicaciones educativas." data-en="Explore interactive programming, financial mathematics and DNA translation resources alongside my educational applications." >Explora recursos interactivos de programación, matemáticas financieras y traducción del ADN, además de mis aplicaciones educativas.</p>
+<div class="tags"><span>Learning tools</span><span>Web apps</span></div><div class="project-links"><a data-es="Explorar LabOlavs ↗" data-en="Explore LabOlavs ↗" href="https://www.labolavs.com/" target="_blank" rel="noopener noreferrer">Explorar LabOlavs ↗</a><a data-es="How Blocks Think ↗" data-en="How Blocks Think ↗" href="https://codegames.labolavs.com/" target="_blank" rel="noopener noreferrer">How Blocks Think ↗</a><a data-es="Matemáticas financieras ↗" data-en="Financial mathematics ↗" href="https://finantial.labolavs.com/" target="_blank" rel="noopener noreferrer">Matemáticas financieras ↗</a></div></div></article>
+</div></section><section id="experience"><div class="section-head"><div><h2 data-es="Experiencia profesional" data-en="Professional experience" >Experiencia profesional</h2></div><p data-es="Experiencia profesional en automatización, infraestructura y desarrollo." data-en="Professional experience across automation, infrastructure and development." >Experiencia profesional en automatización, infraestructura y desarrollo.</p></div>
+<div class="timeline">
+<article class="role"><p data-es="jun 2026 — actualidad" data-en="Jun 2026 — present" class="role-date">jun 2026 — actualidad</p><div><h3>E-chez Group</h3><h4 data-es="Analista de Infraestructura y Automatización" data-en="Infrastructure and Automation Analyst" >Analista de Infraestructura y Automatización</h4><ul><li data-es="Administro y monitoreo infraestructura Azure, aprovisiono servidores y atiendo incidentes." data-en="Administer and monitor Azure infrastructure, provision servers and investigate incidents." >Administro y monitoreo infraestructura Azure, aprovisiono servidores y atiendo incidentes.</li><li data-es="Automatizo flujos de información con Power Automate, TypeScript y funciones de Python en Azure: extraigo información de múltiples tipos de archivos, la transformo y la integro en distintos formatos, incluidos los de desempeño y evaluación." data-en="Automate information workflows with Power Automate, TypeScript and Python functions in Azure: extract information from multiple file types, transform it and populate varied outputs, including performance and evaluation templates." >Automatizo flujos de información con Power Automate, TypeScript y funciones de Python en Azure: extraigo información de múltiples tipos de archivos, la transformo y la integro en distintos formatos, incluidos los de desempeño y evaluación.</li><li data-es="Desarrollo agentes de IA. Un ejemplo actual es el agente de soporte TI que codesarrollo con el equipo: integra APIs y herramientas MCP para crear, consultar, asignar y cerrar tickets en iTop, solicitar detalles del problema, orientar la resolución y reportar acciones. También facilita solicitudes de vacaciones." data-en="Develop AI agents. One current example is the IT support agent I co-develop with the team: it integrates APIs and MCP tools to create, check, assign and close iTop tickets, request problem details, guide resolution and report actions. It also supports vacation requests." >Desarrollo agentes de IA. Un ejemplo actual es el agente de soporte TI que codesarrollo con el equipo: integra APIs y herramientas MCP para crear, consultar, asignar y cerrar tickets en iTop, solicitar detalles del problema, orientar la resolución y reportar acciones. También facilita solicitudes de vacaciones.</li></ul></div></article>
+<article class="role"><p data-es="2025" data-en="2025" class="role-date">2025</p><div><h3>Rock&amp;Burger</h3><h4 data-es="Colaborador freelance full stack" data-en="Freelance full-stack collaborator" >Colaborador freelance full stack</h4><ul><li data-es="Sistema de gestión de restaurante con Spring Boot y React, seguridad JWT, persistencia y pruebas unitarias. Más detalles en el proyecto." data-en="Restaurant management system with Spring Boot and React, JWT security, persistence and unit tests. See the project above." >Sistema de gestión de restaurante con Spring Boot y React, seguridad JWT, persistencia y pruebas unitarias. Más detalles en el proyecto.</li></ul></div></article>
+<article class="role"><p data-es="2024 — 2025" data-en="2024 — 2025" class="role-date">2024 — 2025</p><div><h3 data-es="Cadena de restaurantes" data-en="Restaurant chain">Cadena de restaurantes</h3><h4 data-es="Desarrollo y análisis de datos" data-en="Development and data analysis" >Desarrollo y análisis de datos</h4><ul><li data-es="Solución Django/React para analizar información operativa de tres restaurantes: API REST, Pandas, PostgreSQL, paneles Recharts y reportes automáticos. El análisis identificó oportunidades con una mejora proyectada de al menos 18 % en el margen operativo." data-en="Django/React solution for operational data from three restaurants: REST API, Pandas, PostgreSQL, Recharts dashboards and automated reports. Analysis identified opportunities projecting at least 18% operating-margin improvement." >Solución Django/React para analizar información operativa de tres restaurantes: API REST, Pandas, PostgreSQL, paneles Recharts y reportes automáticos. El análisis identificó oportunidades con una mejora proyectada de al menos 18 % en el margen operativo.</li></ul></div></article>
+<article class="role"><p data-es="2024" data-en="2024" class="role-date">2024</p><div><h3>Tech Leaders Group</h3><h4 data-es="Consultor backend" data-en="Backend consultant" >Consultor backend</h4><ul><li data-es="Colaboré en una plataforma de torneos con Spring Boot y MariaDB: endpoints REST de registro, JWT/Spring Security, validación, manejo de errores y documentación Swagger/OpenAPI." data-en="Collaborated on a Spring Boot/MariaDB tournament platform: registration REST endpoints, JWT/Spring Security, validation, error handling and Swagger/OpenAPI documentation." >Colaboré en una plataforma de torneos con Spring Boot y MariaDB: endpoints REST de registro, JWT/Spring Security, validación, manejo de errores y documentación Swagger/OpenAPI.</li></ul></div></article>
+</div></section><section id="skills"><div class="section-head"><div><h2 data-es="Habilidades técnicas" data-en="Technical skills" >Habilidades técnicas</h2></div><p data-es="Experiencia aplicada en proyectos y operaciones." data-en="Applied experience across projects and operations." >Experiencia aplicada en proyectos y operaciones.</p></div>
+<div class="skills-grid">
+<article class="skill-group"><h3 data-es="Backend e integración" data-en="Backend &amp; integration" >Backend e integración</h3><div class="tags"><span>Python</span><span>Java</span><span>Spring Boot</span><span>Django REST</span><span>FastAPI</span><span>REST APIs</span><span>JWT</span></div></article>
+<article class="skill-group"><h3 data-es="Agentes y evaluación" data-en="Agents &amp; evaluation" >Agentes y evaluación</h3><div class="tags"><span>LangGraph</span><span>PydanticAI</span><span>MCP</span><span>RAG</span><span>pgvector</span><span>Weaviate</span><span>pytest</span></div></article>
+<article class="skill-group"><h3 data-es="Infraestructura y automatización" data-en="Infrastructure &amp; automation" >Infraestructura y automatización</h3><div class="tags"><span>Azure</span><span>Azure Functions</span><span>Power Automate</span><span>Linux</span><span>Docker</span><span>Prometheus</span><span>Grafana</span></div></article>
+<article class="skill-group"><h3 data-es="Frontend y datos" data-en="Frontend &amp; data" >Frontend y datos</h3><div class="tags"><span>React</span><span>TypeScript</span><span>JavaScript</span><span>PostgreSQL</span><span>MySQL</span><span>MariaDB</span><span>Pandas</span></div></article>
+<article class="skill-group"><h3 data-es="Prácticas de ingeniería" data-en="Engineering practices" >Prácticas de ingeniería</h3><div class="tags"><span>Git / Git Flow</span><span>SOLID</span><span>JUnit / Mockito</span><span>Swagger / OpenAPI</span></div></article>
+<article class="skill-group"><h3 data-es="Laboratorios de CI/CD" data-en="CI/CD labs" >Laboratorios de CI/CD</h3><div class="tags"><span>Jenkins</span><span>GitHub Actions</span><span>Kubernetes / Minikube</span></div></article>
+</div></section><section id="education"><div class="section-head"><div><h2 data-es="Formación y docencia" data-en="Education and teaching" >Formación y docencia</h2></div><p data-es="Formación técnica, pensamiento crítico y experiencia docente." data-en="Technical study, critical thinking and teaching experience." >Formación técnica, pensamiento crítico y experiencia docente.</p></div><div class="education-grid"><div>
+<article class="study"><small>SENA</small><h3 data-es="Tecnología en Análisis y Desarrollo de Software" data-en="Software Analysis and Development Technologist" >Tecnología en Análisis y Desarrollo de Software</h3><p data-es="Análisis, POO, arquitectura y desarrollo web." data-en="Analysis, OOP, architecture and web development." >Análisis, POO, arquitectura y desarrollo web.</p></article>
+<article class="study"><small>Universidad Autónoma de Bucaramanga</small><h3 data-es="Técnico en Programación" data-en="Programming Technician" >Técnico en Programación</h3><p data-es="Fundamentos de programación y desarrollo web." data-en="Programming fundamentals and web development." >Fundamentos de programación y desarrollo web.</p></article>
+<article class="study"><small>Universidad de Antioquia</small><h3 data-es="Filosofía · área menor en Matemáticas" data-en="Philosophy · mathematics minor" >Filosofía · área menor en Matemáticas</h3><p data-es="Lógica, pensamiento crítico y teoría de la ciencia; cálculo y álgebra lineal." data-en="Logic, critical thinking and theory of science; calculus and linear algebra." >Lógica, pensamiento crítico y teoría de la ciencia; cálculo y álgebra lineal.</p></article>
+</div><div class="training"><p class="eyebrow" data-es="APRENDIZAJE CONTINUO" data-en="CONTINUOUS LEARNING">APRENDIZAJE CONTINUO</p><h3>SoftServe · Agentic Frameworks</h3><p data-es="Formación en tecnologías cloud, aprendizaje automático y frameworks de agentes. Práctica adicional en proyectos con LangGraph, PydanticAI y Microsoft Agent Framework." data-en="Training in cloud technologies, machine learning and agent frameworks. Additional project practice with LangGraph, PydanticAI and Microsoft Agent Framework." >Formación en tecnologías cloud, aprendizaje automático y frameworks de agentes. Práctica adicional en proyectos con LangGraph, PydanticAI y Microsoft Agent Framework.</p><h3>EPAM · DevOps Fundamentals</h3><p data-es="225 horas · Python, Bash, CI/CD, Docker, Jenkins y automatización de despliegues." data-en="225 hours · Python, Bash, CI/CD, Docker, Jenkins and deployment automation." >225 horas · Python, Bash, CI/CD, Docker, Jenkins y automatización de despliegues.</p><h3>Udemy</h3><p data-es="Web Developer Bootcamp y The Ultimate MySQL Bootcamp." data-en="Web Developer Bootcamp and The Ultimate MySQL Bootcamp." >Web Developer Bootcamp y The Ultimate MySQL Bootcamp.</p></div></div>
+<div class="teaching"><div><h3 data-es="Docencia" data-en="Teaching" >Docencia</h3><p data-es="Enseñar me ha dado práctica para evaluar, explicar y acompañar a otros mientras resuelven problemas." data-en="Teaching has given me practice in assessment, explanation and guiding others through problem solving." >Enseñar me ha dado práctica para evaluar, explicar y acompañar a otros mientras resuelven problemas.</p></div><div>
+<p data-es="Tecnológico de Antioquia · segundo semestre de 2026. Matemáticas Financieras para estudiantes de Negocios Internacionales." data-en="Tecnológico de Antioquia · second semester of 2026. Financial Mathematics for International Business students." >Tecnológico de Antioquia · segundo semestre de 2026. Matemáticas Financieras para estudiantes de Negocios Internacionales.</p>
+<p data-es="Instituto Jorge Robledo · febrero 2018 – mayo 2026. Matemáticas y programación; JavaScript, POO y curso introductorio de Python." data-en="Instituto Jorge Robledo · February 2018 – May 2026. Mathematics and programming; JavaScript, OOP and an introductory Python course." >Instituto Jorge Robledo · febrero 2018 – mayo 2026. Matemáticas y programación; JavaScript, POO y curso introductorio de Python.</p>
+<p data-es="Formarte · marzo 2017 – febrero 2018. Razonamiento lógico y matemático." data-en="Formarte · March 2017 – February 2018. Logical and mathematical reasoning." >Formarte · marzo 2017 – febrero 2018. Razonamiento lógico y matemático.</p>
+</div></div></section><section id="contact" class="contact"><h2 data-es="Contacto" data-en="Contact" >Contacto</h2><p data-es="Medellín, Colombia" data-en="Medellín, Colombia" >Medellín, Colombia</p><a class="email" href="mailto:juan.jbetancur852@gmail.com">juan.jbetancur852@gmail.com ↗</a><div class="contact-links"><a data-es="GitHub ↗" data-en="GitHub ↗" href="https://github.com/juanbetancurm" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a data-es="LinkedIn ↗" data-en="LinkedIn ↗" href="https://www.linkedin.com/in/juanjbetancur852/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a data-es="LabOlavs ↗" data-en="LabOlavs ↗" href="https://www.labolavs.com/" target="_blank" rel="noopener noreferrer">LabOlavs ↗</a></div></section></main><footer class="footer"><span>Juan Betancur</span><span data-es="Desarrollo de software · Infraestructura · Automatización" data-en="Software development · Infrastructure · Automation" >Desarrollo de software · Infraestructura · Automatización</span><a href="#hero" aria-label="Volver arriba" data-es="Volver arriba" data-en="Back to top">Volver arriba</a></footer><dialog id="preview-dialog" aria-labelledby="preview-dialog-title"><div class="dialog-header"><h2 id="preview-dialog-title">LabOlavs</h2><button id="preview-close" type="button" data-es="Volver al perfil" data-en="Back to profile" autofocus>Volver al perfil</button></div><img id="preview-large-image" src="assets/labolavs.jpg" alt="LabOlavs"><div class="dialog-footer"><button id="dialog-prev" type="button" data-es="Anterior" data-en="Previous">Anterior</button><p id="preview-large-caption"></p><button id="dialog-next" type="button" data-es="Siguiente" data-en="Next">Siguiente</button></div></dialog></body></html>
